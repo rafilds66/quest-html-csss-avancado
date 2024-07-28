@@ -4,52 +4,49 @@ html{
 }
 
 body{
-    display: grid;
-    grid-template-areas: "header header"
-                          "main main"
-                          "footer footer";
-    grid-template-columns: repeat(2, 1fr); 
     background: url(../images/bg-desktop.svg) center center no-repeat;
     background-color: hsl(257, 40%, 49%);
+    position: absolute;
 }
 
 .header{
-    grid-area: header;
     margin-bottom: 15px;
     margin-left: 30px;
+}
 
+.header .logo{
+    width: 200px;
 }
 
 .main{
-    grid-area: main;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
     margin-left: 30px;
+    max-height: 79vh;
+    
 }
 
-.main h2{
-    font-size: 5rem;
+.main img{
+   max-width: 100%;     
+}
+
+.main .texto h2{
+    font-size: 4rem;
     color: #fff;
-    top: 0;
-    margin-top: 50px;
-    margin-left: 25px;
-    position: absolute;
+    margin: 50px 15px;
     font-weight: 700;
 }
 
-.main p{
+.main .texto p{
     font-size: 2rem;
     color: #fff;
     font-weight: 400;
-    margin-left: 25px;
+    margin: 0 25px;
 }
 
-.main a{
+.main .register{
     font-size: 2rem;
     margin: 50px;
-    position: absolute;
     background-color: #fff;
     border-radius: 25px;
     width: 200px;
@@ -57,9 +54,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
+    font-weight: 600;
     color: hsl(257, 40%, 49%);
     transition: 0.4s;
+    box-shadow: 3px 5px 4px 4px rgba(232,130,232,0.17);
+-webkit-box-shadow: 3px 5px 4px 4px rgba(232,130,232,0.17);
+-moz-box-shadow: 3px 5px 4px 4px rgba(232,130,232,0.17);
 }
 
 .main a:hover{
@@ -68,11 +68,12 @@ body{
 }
 
 .footer{
-    grid-area: footer;
     font-size: 2.5rem;
     display: flex;
     flex-direction: row-reverse;
-    padding: 15px;
+    padding-right: 15px;
+    position: relative;
+    bottom: 0;
 }
 
 .footer i{
