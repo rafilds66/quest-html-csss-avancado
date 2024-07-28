@@ -1,7 +1,22 @@
+@media(max-width: 426px){
+    .main img{
+      width: 350px;
+    }
+
+    .footer{
+        margin-top: 0px;
+    }
+}
+
+
 @media(max-width: 769px){
     body{
         display: flex;
         flex-direction: column;
+        margin: 0;
+    }
+
+    .header{
         margin: 0;
     }
 
@@ -15,10 +30,11 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        margin: 0;
     }
 
     .main img{
-        max-width: 350px;
+        max-width: 650px;
     }
 
     .main .texto h2{
@@ -30,14 +46,13 @@
         font-size: 2rem;
         flex-wrap: wrap;
         text-align: center;
-        margin-bottom: 50px;
+        margin: 0;
     }
 
     .main .register{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: aliceblue;
         margin: 30px auto;
     }
 
@@ -45,7 +60,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 300px;
+        padding-right: 0;
+    }
+
+}
+
+@media(max-width: 1025px){
+     .header .logo{
+        margin: 25px;
+    }
+
+    .main img{
+        width: 450px;
     }
 
 }

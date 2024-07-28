@@ -6,7 +6,6 @@ html{
 body{
     background: url(../images/bg-desktop.svg) center center no-repeat;
     background-color: hsl(257, 40%, 49%);
-    position: absolute;
 }
 
 .header{
@@ -22,9 +21,7 @@ body{
     display: flex;
     justify-content: center;
     margin-left: 30px;
-    max-height: 79vh;
-    
-}
+   }
 
 .main img{
    max-width: 100%;     
