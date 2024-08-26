@@ -5,12 +5,14 @@ html{
 
 body{
     background: url(../images/bg-desktop.svg) center center no-repeat;
+    background-size: cover;
     background-color: hsl(257, 40%, 49%);
+    max-width: 1440px;
+    margin: auto;
 }
 
 .header{
-    margin-bottom: 15px;
-    margin-left: 30px;
+   margin: 30px ;
 }
 
 .header .logo{
@@ -19,19 +21,20 @@ body{
 
 .main{
     display: flex;
-    justify-content: center;
+    align-items: center;
     margin-left: 30px;
-   }
-
-.main img{
-   max-width: 100%;     
 }
+
+/* .main img{
+   max-width: 100%;   
+} */
 
 .main .texto h2{
     font-size: 4rem;
     color: #fff;
     margin: 50px 15px;
     font-weight: 700;
+    
 }
 
 .main .texto p{
@@ -54,9 +57,7 @@ body{
     font-weight: 600;
     color: hsl(257, 40%, 49%);
     transition: 0.4s;
-    box-shadow: 3px 5px 4px 4px rgba(232,130,232,0.17);
--webkit-box-shadow: 3px 5px 4px 4px rgba(232,130,232,0.17);
--moz-box-shadow: 3px 5px 4px 4px rgba(232,130,232,0.17);
+    box-shadow: #fff;
 }
 
 .main a:hover{
@@ -79,6 +80,10 @@ body{
     transition: 0.4s;
 }
 
+.footer nav ul{
+    display: flex;
+    flex-direction: row;
+}
 .footer i:hover{
     color: hsl(300, 69%, 71%);
 }
